@@ -11,14 +11,13 @@ export const actions = {
         query GetGames {
           games {
             id
-            image
             name
+            year_of_release
+            platform
+            genres
+            labels
             rating
-            game_user {
-              id
-              name
-              profileImg
-            }
+            cover_image
           }
         }
       `,
