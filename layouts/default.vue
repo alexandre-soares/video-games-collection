@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import TheHeader from '@/components/header.vue'
+import TheHeader from '@/components/TheHeader.vue'
 export default {
   components: {
     TheHeader
@@ -38,5 +38,11 @@ h2,
 h3,
 h4 {
   font-weight: 600;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 </style>

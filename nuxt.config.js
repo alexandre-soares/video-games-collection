@@ -21,7 +21,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [`~/plugins/getGames.server.js`],
+  plugins: [`~/plugins/getGames.server.js`, `~/plugins/getUsers.server.js`],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

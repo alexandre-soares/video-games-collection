@@ -1,9 +1,7 @@
 <template>
   <div class="container">
-    <section class="game-container">
-      <article v-for="game in games" :key="game.id">
-        <Game :game="game" />
-      </article>
+    <section class="game-list">
+      <Game v-for="game in games" :key="game.id" :game="game" />
     </section>
   </div>
 </template>
@@ -22,3 +20,28 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.container {
+  max-width: 1440px;
+  padding: 0 40px;
+}
+
+.game-list {
+  margin: 48px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 32px;
+
+  & article {
+    flex: 30%;
+
+    @media screen and (max-width: 768px) {
+      flex: 100%;
+    }
+  }
+}
+</style>
